@@ -1,0 +1,16 @@
+{
+  "case_id": "TCGA-DE-A69K",
+  "label": "cvPTC",
+  "W": 138039,
+  "H": 60084,
+  "elapsed_s": 3295.2101509571075,
+  "grid_total": 7772,
+  "thumb_prefilter_pass": 2142,
+  "fullres_tissue_kept": 1928,
+  "blur_dropped": 46,
+  "ink_dropped": 26,
+  "line_dropped": 194,
+  "density_low_dropped": 0,
+  "density_high_dropped": 241,
+  "final_kept": 1421
+}

@@ -1,0 +1,16 @@
+{
+  "case_id": "TCGA-BJ-A45F",
+  "label": "cvPTC",
+  "W": 103768,
+  "H": 77491,
+  "elapsed_s": 5591.171216726303,
+  "grid_total": 7575,
+  "thumb_prefilter_pass": 4350,
+  "fullres_tissue_kept": 3911,
+  "blur_dropped": 230,
+  "ink_dropped": 79,
+  "line_dropped": 1415,
+  "density_low_dropped": 19,
+  "density_high_dropped": 91,
+  "final_kept": 2077
+}

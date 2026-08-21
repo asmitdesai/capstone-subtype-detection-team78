@@ -1,0 +1,56 @@
+Label correction log — methylation cvPTC/fvPTC vs TCGA clinical ICD-O disagreements
+Generated: 2026-07-28
+Source of disagreement list: Dataset/Datasets/paired_multimodal_cases_full.csv (label_match == False)
+Source of clinical data: ~/Downloads/clinical.project-tcga-thca.2026-07-19.json
+
+Background
+----------
+The methylation cohort's cvPTC/fvPTC label is baked into the raw data file each
+sample came from (cvPTC_beta_values_unprocessed.txt vs fvPTC_beta_values_unprocessed.txt,
+via the "_cvPTC"/"_fvPTC" suffix on each sample ID). This label is NOT derived
+anywhere in this codebase or documented in the source repo
+(andreaphp/Subtypes-detection-of-papillary-thyroid-cancer-from-methylation-assay-via-Deep-Neural-Network) —
+no methodology notes or citation were found for how the original split was made.
+
+TCGA's clinical annotation (primary_diagnosis / morphology 8340/3, the
+follicular-variant-specific ICD-O code) additionally carries a
+`consistent_pathology_review` flag per diagnosis, indicating whether TCGA's
+central pathology re-review agreed with the local/site diagnosis.
+
+4 cases disagreed between the two sources (methylation says cvPTC_classical,
+TCGA clinical says fvPTC_follicular_variant, morphology 8340/3 in all 4).
+These were the ONLY 4 mismatches in the full 457-case paired cohort.
+
+Decision
+--------
+RELABELED to fvPTC_follicular_variant (methylation label overridden by TCGA clinical label):
+  - TCGA-BJ-A45K   (meth_split=test)   consistent_pathology_review: Yes
+  - TCGA-J8-A3O0   (meth_split=test)   consistent_pathology_review: Yes
+  - TCGA-FY-A4B0   (meth_split=train)  consistent_pathology_review: Yes
+  Justification: TCGA's own central pathology re-review independently confirmed
+  the follicular-variant diagnosis for these 3 cases (consistent_pathology_review
+  == "Yes"), which outweighs an undocumented, unverifiable label baked into the
+  raw methylation source files with no traceable methodology.
+
+EXCLUDED (left out of demo/training use, not relabeled):
+  - TCGA-FY-A3R9   (meth_split=test)   consistent_pathology_review: No
+  Justification: TCGA's own central pathology re-review flagged disagreement
+  with the local diagnosis for this specific case. Neither source can be
+  trusted over the other here — genuinely unresolved, so it is dropped rather
+  than guessed.
+
+Effect on the 93-patient meth_split=='test' demo set (Step 2):
+  - TCGA-FY-A3R9: excluded -> 92 remaining before re-add
+  - TCGA-BJ-A45K, TCGA-J8-A3O0: relabeled cvPTC_classical -> fvPTC_follicular_variant, kept in set
+  - TCGA-FY-A4B0: relabeled, but was already in meth_split=='train', not part of the 93-test demo set
+
+PENDING — NOT YET APPLIED
+--------------------------
+  - TCGA-FY-A4B0 (meth_split=train): relabel decision above (cvPTC_classical ->
+    fvPTC_follicular_variant) has NOT been applied anywhere yet, because no
+    training-data build has happened since this decision was made (2026-07-28).
+    Step 2 only touched meth_split=='test', so this case was correctly left
+    untouched there — but it still needs the same relabel applied whenever
+    the training set (meth_split=='train') is assembled. Do not let "only
+    train" be mistaken for "no action needed" — the relabel still applies,
+    just not yet actioned. Check this log before building the training set.

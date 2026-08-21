@@ -1,0 +1,16 @@
+{
+  "case_id": "TCGA-CE-A13K",
+  "label": "cvPTC",
+  "W": 65688,
+  "H": 74673,
+  "elapsed_s": 4306.547639846802,
+  "grid_total": 4608,
+  "thumb_prefilter_pass": 3157,
+  "fullres_tissue_kept": 2938,
+  "blur_dropped": 0,
+  "ink_dropped": 1,
+  "line_dropped": 2,
+  "density_low_dropped": 4,
+  "density_high_dropped": 0,
+  "final_kept": 2931
+}

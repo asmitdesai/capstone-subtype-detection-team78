@@ -1,0 +1,16 @@
+{
+  "case_id": "TCGA-CE-A3ME",
+  "label": "cvPTC",
+  "W": 77112,
+  "H": 56039,
+  "elapsed_s": 2583.5687777996063,
+  "grid_total": 4050,
+  "thumb_prefilter_pass": 2178,
+  "fullres_tissue_kept": 1485,
+  "blur_dropped": 0,
+  "ink_dropped": 0,
+  "line_dropped": 48,
+  "density_low_dropped": 19,
+  "density_high_dropped": 0,
+  "final_kept": 1418
+}

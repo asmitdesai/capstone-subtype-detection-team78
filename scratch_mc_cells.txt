@@ -1,0 +1,268 @@
+--- cell 12 (code) ---
+from tensorflow.keras import regularizers
+from tensorflow.keras.callbacks import EarlyStopping, ReduceLROnPlateau
+from sklearn.utils import class_weight
+from sklearn.model_selection import StratifiedShuffleSplit
+from sklearn.metrics import (
+    classification_report, confusion_matrix,
+    matthews_corrcoef, roc_auc_score
+)
+import seaborn as sns
+import matplotlib.pyplot as plt
+import numpy as np
+import tensorflow as tf
+import tensorflow.keras.backend as K
+import os
+
+X_train_final = X_train_sub
+y_train_final = y_train_sub
+print(f"Training on full dataset: {X_train_final.shape[0]} samples")
+print(f"  cvPTC (class 0): {(y_train_final == 0).sum()} samples")
+print(f"  fvPTC (class 1): {(y_train_final == 1).sum()} samples")
+
+# ── Model architecture ─────────────────────────────────────────────────
+def get_optimized_subtype_model(num_classes):
+    base_model = get_uncompiled_model(reset_last_layer=False)
+    x = base_model.layers[-2].output
+    x = keras.layers.Dropout(0.2)(x)
+    x = keras.layers.Dense(
+        64,
+        activation='relu',
+        kernel_regularizer=regularizers.l2(0.001)
+    )(x)
+    x = keras.layers.Dropout(0.1)(x)
+    output = keras.layers.Dense(
+        num_classes,
+        activation='softmax',
+        name='subtype_output'
+    )(x)
+    return keras.Model(inputs=base_model.input, outputs=output)
+
+print("\n✅ Model Architecture defined.")
+
+# ── Class weights ──────────────────────────────────────────────────────
+class_weights_vals = class_weight.compute_class_weight(
+    class_weight='balanced',
+    classes=np.unique(y_train_final),
+    y=y_train_final
+)
+class_weights_dict = dict(enumerate(class_weights_vals))
+print(f"⚖️  Class Weights: {class_weights_dict}")
+print(f"    fvPTC penalty is {class_weights_dict[1]/class_weights_dict[0]:.1f}x higher than cvPTC")
+
+# ── Stable binary MCC metric ───────────────────────────────────────────
+def mcc_metric(y_true, y_pred):
+    """Stable binary MCC. Returns 0.0 when model predicts one class."""
+    y_pred_classes = tf.cast(tf.argmax(y_pred, axis=1), tf.float32)
+    y_true_classes = tf.cast(tf.reshape(y_true, [-1]), tf.float32)
+
+    tp = tf.reduce_sum(y_pred_classes * y_true_classes)
+    tn = tf.reduce_sum((1.0 - y_pred_classes) * (1.0 - y_true_classes))
+    fp = tf.reduce_sum(y_pred_classes * (1.0 - y_true_classes))
+    fn = tf.reduce_sum((1.0 - y_pred_classes) * y_true_classes)
+
+    numerator = tp * tn - fp * fn
+    denominator = tf.sqrt((tp + fp) * (tp + fn) * (tn + fp) * (tn + fn))
+    return tf.cond(
+        tf.equal(denominator, 0.0),
+        lambda: tf.constant(0.0),
+        lambda: numerator / denominator
+    )
+
+mcc_metric.__name__ = 'mcc'
+
+# ── Compile ────────────────────────────────────────────────────────────
+final_model_v2 = get_optimized_subtype_model(num_subtypes)
+
+final_model_v2.compile(
+    loss='sparse_categorical_crossentropy',
+    optimizer=keras.optimizers.Adam(learning_rate=3e-5),
+    metrics=['accuracy', mcc_metric]
+)
+
+# ── Callbacks ──────────────────────────────────────────────────────────
+early_stopping_cb = EarlyStopping(
+    monitor='val_loss',
+    patience=12,
+    restore_best_weights=True,
+    verbose=1
+)
+
+reduce_lr_cb = ReduceLROnPlateau(
+    monitor='val_loss',
+    factor=0.5,
+    patience=4,
+    min_lr=1e-7,
+    verbose=1
+)
+
+# ── Train ──────────────────────────────────────────────────────────────
+print("\n🚀 Training Optimized Model (MC Dropout + MCC + ReduceLROnPlateau)...")
+history_v2 = final_model_v2.fit(
+    X_train_final,
+    y_train_final,
+    batch_size=8,
+    epochs=50,
+    validation_split=0.2,
+    callbacks=[early_stopping_cb, reduce_lr_cb],
+    class_weight=class_weights_dict,
+    verbose=1
+)
+
+# ── Training history plots ─────────────────────────────────────────────
+fig, axes = plt.subplots(1, 3, figsize=(16, 4))
+
+axes[0].plot(history_v2.history['accuracy'], label='Train')
+axes[0].plot(history_v2.history['val_accuracy'], label='Val')
+axes[0].set_title('Accuracy per Epoch')
+axes[0].set_xlabel('Epoch')
+axes[0].legend()
+
+axes[1].plot(history_v2.history['loss'], label='Train')
+axes[1].plot(history_v2.history['val_loss'], label='Val')
+axes[1].set_title('Loss per Epoch')
+axes[1].set_xlabel('Epoch')
+axes[1].legend()
+
+axes[2].plot(history_v2.history['mcc'], label='Train MCC')
+axes[2].plot(history_v2.history['val_mcc'], label='Val MCC')
+axes[2].axhline(0.7, color='orange', linestyle=':',
+                label='Target = 0.70')
+axes[2].set_title('MCC per Epoch')
+axes[2].set_xlabel('Epoch')
+axes[2].legend()
+
+plt.tight_layout()
+plt.show()
+
+# ── Final evaluation ───────────────────────────────────────────────────
+print("\n" + "="*60)
+print("PRELIMINARY EVALUATION (in-sample)")
+print("Cross-validation in next cell is the reported result")
+print("="*60)
+
+y_pred_probs_eval = final_model_v2.predict(X_train_final, verbose=0)
+y_pred_eval = np.argmax(y_pred_probs_eval, axis=1)
+
+mcc_final = matthews_corrcoef(y_train_final, y_pred_eval)
+print(f"\n📊 MCC      : {mcc_final:.4f}   (>0.7 = strong)")
+
+try:
+    auc_final = roc_auc_score(y_train_final, y_pred_probs_eval[:, 1])
+    print(f"📊 AUC-ROC  : {auc_final:.4f}")
+except Exception as e:
+    print(f"⚠️  AUC-ROC error: {e}")
+
+fvptc_mask = y_train_final == 1
+fvptc_recall = (y_pred_eval[fvptc_mask] == 1).mean()
+print(f"📊 fvPTC Recall : {fvptc_recall:.4f}  ← most clinically important")
+print(f"   Of every 100 fvPTC patients, model correctly identifies {fvptc_recall*100:.0f}")
+
+print("\n📝 Classification Report:\n")
+print(classification_report(
+    y_train_final, y_pred_eval,
+    target_names=['cvPTC', 'fvPTC'],
+    zero_division=0
+))
+
+cm = confusion_matrix(y_train_final, y_pred_eval)
+plt.figure(figsize=(6, 5))
+sns.heatmap(cm, annot=True, fmt='d', cmap='Greens',
+            xticklabels=['cvPTC', 'fvPTC'],
+            yticklabels=['cvPTC', 'fvPTC'],
+            cbar=False)
+plt.title(f'Confusion Matrix (in-sample)\nMCC: {mcc_final:.3f}')
+plt.xlabel('Predicted')
+plt.ylabel('True')
+plt.tight_layout()
+plt.show()
+
+# ── Monte Carlo Dropout inference ──────────────────────────────────────
+# FIX: Use stratified sample instead of first 50 samples.
+# X_train_final[:50] was mostly cvPTC due to data ordering,
+# causing MCC on confident samples = 0.0000 (no fvPTC in sample).
+# StratifiedShuffleSplit guarantees both classes are represented.
+sss = StratifiedShuffleSplit(n_splits=1, test_size=50/len(X_train_final),
+                              random_state=42)
+_, mc_idx = next(sss.split(X_train_final, y_train_final))
+X_mc = X_train_final[mc_idx]
+y_mc = y_train_final[mc_idx]
+MC_SAMPLE_SIZE = len(mc_idx)
+print(f"\n🔄 Running Monte Carlo Dropout ({MC_SAMPLE_SIZE} samples, 50 passes)...")
+print(f"   Sample composition: {(y_mc==0).sum()} cvPTC + {(y_mc==1).sum()} fvPTC")
+
+def mc_dropout_predict(model, X, n_iterations=50):
+    """
+    n_iterations forward passes with Dropout ACTIVE (training=True).
+    Returns mean predictions and per-sample uncertainty (std).
+    """
+    preds = [model(X, training=True).numpy() for _ in range(n_iterations)]
+    preds = np.array(preds)
+    return preds.mean(axis=0), preds.std(axis=0)
+
+mc_mean_probs, mc_uncertainty = mc_dropout_predict(final_model_v2, X_mc)
+
+mc_y_pred = np.argmax(mc_mean_probs, axis=1)
+sample_uncertainty = mc_uncertainty[np.arange(len(mc_y_pred)), mc_y_pred]
+mcc_mc = matthews_corrcoef(y_mc, mc_y_pred)
+
+print(f"📊 MC Dropout MCC     : {mcc_mc:.4f}")
+print(f"   Mean uncertainty  : {sample_uncertainty.mean():.4f}")
+print(f"   Max  uncertainty  : {sample_uncertainty.max():.4f}")
+print(f"   Min  uncertainty  : {sample_uncertainty.min():.4f}")
+
+uncertainty_threshold = round(float(sample_uncertainty.mean()), 2)
+confident_mask = sample_uncertainty < uncertainty_threshold
+print(f"\n🎯 Confidence threshold = {uncertainty_threshold}  (set to mean uncertainty)")
+print(f"   Confident  : {confident_mask.sum()} / {len(mc_y_pred)} samples")
+print(f"   Review flag: {(~confident_mask).sum()} / {len(mc_y_pred)} samples")
+
+if confident_mask.sum() > 1:
+    mcc_conf = matthews_corrcoef(y_mc[confident_mask], mc_y_pred[confident_mask])
+    print(f"   MCC on confident samples only: {mcc_conf:.4f}")
+    print(f"   Clinical meaning: model achieves MCC {mcc_conf:.3f} on cases")
+    print(f"   it is confident about — {(~confident_mask).sum()} cases flagged for expert review")
+
+fig, axes = plt.subplots(1, 2, figsize=(14, 4))
+
+axes[0].hist(sample_uncertainty, bins=20, color='steelblue', edgecolor='white')
+axes[0].axvline(uncertainty_threshold, color='red', linestyle='--',
+                label=f'Threshold = {uncertainty_threshold}')
+axes[0].set_xlabel('Uncertainty (MC Dropout Std)')
+axes[0].set_ylabel('Samples')
+axes[0].set_title('Distribution of Prediction Uncertainty')
+axes[0].legend()
+
+correct = (mc_y_pred == y_mc)
+axes[1].scatter(
+    range(len(sample_uncertainty)), sample_uncertainty,
+    c=['green' if c else 'red' for c in correct],
+    alpha=0.6, s=30
+)
+axes[1].axhline(uncertainty_threshold, color='black', linestyle='--',
+                label=f'Threshold = {uncertainty_threshold}')
+axes[1].set_xlabel('Sample Index')
+axes[1].set_ylabel('Uncertainty')
+axes[1].set_title('Uncertainty per Sample\n(green = correct, red = wrong)')
+axes[1].legend()
+
+plt.tight_layout()
+plt.show()
+
+cm_mc = confusion_matrix(y_mc, mc_y_pred)
+plt.figure(figsize=(6, 5))
+sns.heatmap(cm_mc, annot=True, fmt='d', cmap='Blues',
+            xticklabels=['cvPTC', 'fvPTC'],
+            yticklabels=['cvPTC', 'fvPTC'],
+            cbar=False)
+plt.title(f'MC Dropout Confusion Matrix\nMCC: {mcc_mc:.3f}')
+plt.xlabel('Predicted')
+plt.ylabel('True')
+plt.tight_layout()
+plt.show()
+
+# ── Save ───────────────────────────────────────────────────────────────
+save_path_v2 = os.path.join(MODEL_PATH, "thyroid-subtype-optimized.h5")
+final_model_v2.save(save_path_v2)
+print(f"\n✅ Model saved to: {save_path_v2}")
+print("\n▶️  Run the next cell for cross-validation — that is your reported result.")

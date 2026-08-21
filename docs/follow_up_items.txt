@@ -1,0 +1,21 @@
+Follow-up items — running log of deferred decisions
+(append dated entries below, don't delete resolved items — mark them done)
+
+----------------------------------------------------------------------
+[2026-07-28] OPEN — Expand image subset to cover all 92 demo-set patients
+Currently only 27 of the 92 meth_split=='test' demo-set patients
+(Dataset/Datasets/PairedDemoSet/image_case_ids.csv) have a row in
+Dataset/tcga_thca_download_subset.csv / the 7-batch download plan
+(Dataset/Datasets/download_batches/). The other 65 demo patients have no
+slide selected in the current subset.
+
+Decision: proceed with the current 134-case / 7-batch plan as-is for
+tomorrow's download — 27-case demo coverage is enough for the live demo.
+
+Next step (after the 134-case download + pipeline are working end-to-end):
+revisit whether to expand the image subset so all 92 demo-set patients have
+slides, so performance can be reported on the full held-out paired cohort
+instead of just the 27-case demo sample. Check IDC/GDC for slide
+availability on the remaining 65 case_ids before assuming they're all
+downloadable.
+----------------------------------------------------------------------

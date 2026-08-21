@@ -1,0 +1,16 @@
+{
+  "case_id": "TCGA-CE-A481",
+  "label": "cvPTC",
+  "W": 65688,
+  "H": 80263,
+  "elapsed_s": 2463.7051157951355,
+  "grid_total": 4992,
+  "thumb_prefilter_pass": 2205,
+  "fullres_tissue_kept": 2030,
+  "blur_dropped": 0,
+  "ink_dropped": 0,
+  "line_dropped": 55,
+  "density_low_dropped": 4,
+  "density_high_dropped": 0,
+  "final_kept": 1971
+}

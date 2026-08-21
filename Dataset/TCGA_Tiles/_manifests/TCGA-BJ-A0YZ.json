@@ -1,0 +1,16 @@
+{
+  "case_id": "TCGA-BJ-A0YZ",
+  "label": "cvPTC",
+  "W": 127696,
+  "H": 86273,
+  "elapsed_s": 4668.812779903412,
+  "grid_total": 10416,
+  "thumb_prefilter_pass": 4119,
+  "fullres_tissue_kept": 3696,
+  "blur_dropped": 7,
+  "ink_dropped": 20,
+  "line_dropped": 271,
+  "density_low_dropped": 22,
+  "density_high_dropped": 0,
+  "final_kept": 3376
+}

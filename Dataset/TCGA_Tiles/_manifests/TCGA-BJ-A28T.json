@@ -1,0 +1,16 @@
+{
+  "case_id": "TCGA-BJ-A28T",
+  "label": "cvPTC",
+  "W": 178111,
+  "H": 84294,
+  "elapsed_s": 8550.147393465042,
+  "grid_total": 14186,
+  "thumb_prefilter_pass": 6358,
+  "fullres_tissue_kept": 5382,
+  "blur_dropped": 167,
+  "ink_dropped": 169,
+  "line_dropped": 122,
+  "density_low_dropped": 31,
+  "density_high_dropped": 0,
+  "final_kept": 4893
+}

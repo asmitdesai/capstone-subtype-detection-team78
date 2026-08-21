@@ -1,0 +1,36 @@
+# ===== OS / drive cruft =====
+.DS_Store
+Thumbs.db
+
+# ===== Python =====
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.env
+*.egg-info/
+
+# ===== Dead Windows venv =====
+.venv/
+
+# ===== Local tool settings (machine-specific, not project source) =====
+.claude/
+
+# ===== Bulk slide/tile data =====
+Dataset/TCGA_THCA_Slides/
+Dataset/TCGA_Tiles/cvPTC/
+Dataset/RawData/
+Dataset/Benign_PNG_Images/
+Dataset/_linux_migration_smoketest/
+Dataset/Tensorboard/
+Dataset/Datasets/PairedDemoSet/
+Dataset/Datasets/*.npy
+
+# ===== Trained model checkpoints =====
+Dataset/Models/
+
+# ===== Superseded/archive data (incl. old forked clones) =====
+archive/
+
+# ===== Bulk diagnostic dumps nested inside code/ =====
+code/thyroid/stage2_filtering_run/
+code/thyroid/stage2_confound_check/

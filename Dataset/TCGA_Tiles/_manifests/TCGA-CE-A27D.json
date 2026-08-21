@@ -1,0 +1,16 @@
+{
+  "case_id": "TCGA-CE-A27D",
+  "label": "cvPTC",
+  "W": 59024,
+  "H": 71733,
+  "elapsed_s": 2534.3714032173157,
+  "grid_total": 3990,
+  "thumb_prefilter_pass": 2412,
+  "fullres_tissue_kept": 2097,
+  "blur_dropped": 8,
+  "ink_dropped": 7,
+  "line_dropped": 1145,
+  "density_low_dropped": 0,
+  "density_high_dropped": 66,
+  "final_kept": 871
+}

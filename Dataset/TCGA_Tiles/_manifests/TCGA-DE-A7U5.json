@@ -1,0 +1,16 @@
+{
+  "case_id": "TCGA-DE-A7U5",
+  "label": "cvPTC",
+  "W": 125663,
+  "H": 47946,
+  "elapsed_s": 3152.001563310623,
+  "grid_total": 5612,
+  "thumb_prefilter_pass": 1648,
+  "fullres_tissue_kept": 1449,
+  "blur_dropped": 0,
+  "ink_dropped": 10,
+  "line_dropped": 9,
+  "density_low_dropped": 24,
+  "density_high_dropped": 53,
+  "final_kept": 1353
+}

@@ -1,0 +1,16 @@
+{
+  "case_id": "TCGA-DE-A4M9",
+  "label": "cvPTC",
+  "W": 136135,
+  "H": 49716,
+  "elapsed_s": 4411.0746483802795,
+  "grid_total": 6336,
+  "thumb_prefilter_pass": 2852,
+  "fullres_tissue_kept": 2658,
+  "blur_dropped": 8,
+  "ink_dropped": 169,
+  "line_dropped": 4,
+  "density_low_dropped": 422,
+  "density_high_dropped": 0,
+  "final_kept": 2055
+}

@@ -1,0 +1,16 @@
+{
+  "case_id": "TCGA-BJ-A3PU",
+  "label": "cvPTC",
+  "W": 85679,
+  "H": 74468,
+  "elapsed_s": 5225.304983139038,
+  "grid_total": 5976,
+  "thumb_prefilter_pass": 4089,
+  "fullres_tissue_kept": 3840,
+  "blur_dropped": 32,
+  "ink_dropped": 0,
+  "line_dropped": 400,
+  "density_low_dropped": 5,
+  "density_high_dropped": 0,
+  "final_kept": 3403
+}

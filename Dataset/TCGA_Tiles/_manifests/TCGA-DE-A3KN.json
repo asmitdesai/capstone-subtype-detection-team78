@@ -1,0 +1,16 @@
+{
+  "case_id": "TCGA-DE-A3KN",
+  "label": "cvPTC",
+  "W": 152319,
+  "H": 62360,
+  "elapsed_s": 5795.569050073624,
+  "grid_total": 8880,
+  "thumb_prefilter_pass": 3116,
+  "fullres_tissue_kept": 2857,
+  "blur_dropped": 59,
+  "ink_dropped": 0,
+  "line_dropped": 3,
+  "density_low_dropped": 162,
+  "density_high_dropped": 0,
+  "final_kept": 2633
+}

@@ -1,0 +1,461 @@
+case_id,primary_diagnosis,morphology,label
+TCGA-EL-A3N3,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-FY-A4B3,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-J8-A3YF,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A3CW,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-FY-A3NP,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-DJ-A3UY,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-H2-A3RH,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-J8-A3O2,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A2CO,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-EL-A3ZM,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-BJ-A190,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A2PP,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-FE-A3PB,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A4K0,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DE-A3KN,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A1YC,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-DJ-A13T,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A3AL,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-ET-A3DO,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-BJ-A18Z,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A4FK,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-EM-A3FK,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-BJ-A0Z5,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-ET-A25I,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-BJ-A4O8,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A3SZ,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A3AP,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-FE-A3PA,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-ET-A25P,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A4FM,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A2PU,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A2Q5,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A3SX,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A3ZH,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A3GY,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-CE-A3MD,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DO-A1JZ,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-ET-A39J,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A3VI,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-ET-A3DP,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A3AO,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A22P,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A4KI,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-E8-A437,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-BJ-A2N9,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A3VM,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-DJ-A2QC,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A3ZN,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A2OZ,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A1QN,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A3D6,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-ET-A2N0,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A2CR,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-MK-A84Z,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-EL-A3CM,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A1CW,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-DE-A7U5,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-KS-A41J,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-E8-A414,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A3GS,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A3OA,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-ET-A40R,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-MK-A4N9,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A4UP,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A3CR,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-H2-A2K9,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A3UP,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-EL-A3ZG,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A2CL,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-DJ-A3VA,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A1CT,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-ET-A4KQ,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-EL-A4K4,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-BJ-A3PT,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A3O3,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-J8-A4HY,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A3FR,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-CE-A481,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-ET-A40T,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-ET-A3BW,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A2PR,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-E8-A44M,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A3V9,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A2CP,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-ET-A25K,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A3GZ,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-FE-A236,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A3ZQ,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-BJ-A0Z3,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A3O9,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-EL-A3N2,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A3CP,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-DJ-A1QM,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-ET-A39I,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-EM-A3O6,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-EL-A3H3,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-FE-A3PD,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-DJ-A2PT,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A3O7,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-IM-A3EB,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-BJ-A45E,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A1QI,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A13X,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-DJ-A13W,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-ET-A3BN,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A3ZO,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A3ZK,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A4JZ,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-ET-A2N4,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-DJ-A13R,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-DE-A0XZ,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-FY-A40L,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A3H5,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-J8-A3NZ,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-ET-A39P,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-FY-A40N,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-DJ-A3UU,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-ET-A3BU,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A3CN,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A4FH,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-EM-A3AK,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A2CN,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-KS-A41L,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-E8-A433,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A3CT,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-BJ-A0ZA,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-BJ-A3PU,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-FY-A3ON,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-KS-A4IC,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-E8-A242,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-J8-A3YD,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A1CU,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A3GQ,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-DE-A4MB,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A4JW,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-ET-A2MZ,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A4K6,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A4FU,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-EM-A4FQ,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-FY-A3I5,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-BJ-A28R,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-KS-A4I9,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-FY-A3TY,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A2OV,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-EM-A1YA,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-J8-A3O0,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-FY-A3RA,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-FY-A3WA,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-ET-A2MX,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A3FN,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-E3-A3DZ,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-BJ-A28S,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-ET-A3BQ,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-E3-A3E0,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-FY-A4B4,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-ET-A3DS,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A3D4,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A2PZ,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A3UW,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-FE-A232,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-ET-A25J,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A2PV,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A3D0,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-FK-A3SD,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-J8-A42S,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-E3-A3E3,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A4KH,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A3CL,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A3T3,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A4FV,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A3AN,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A3ZT,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A3V3,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-BJ-A0ZC,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A2CU,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-DJ-A3UN,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A4JX,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A3AI,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-EM-A22O,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DE-A0Y2,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-FY-A4B0,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-BJ-A28Z,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-ET-A39K,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A3US,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A4JV,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-KS-A4I1,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-FE-A231,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A3AR,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A2CQ,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-BJ-A2N8,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-BJ-A0Z0,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-FY-A40M,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A3CU,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-KS-A41I,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-CE-A27D,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A1CV,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A3H2,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A3MY,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-BJ-A45H,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DE-A2OL,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-DJ-A13O,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A2CK,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-DJ-A4UL,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-FK-A3S3,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-FE-A22Z,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-ET-A39T,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-DJ-A2Q7,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A3V2,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-ET-A40P,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-FK-A4UB,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-FE-A237,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-ET-A2N5,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-GE-A2C6,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-FY-A3W9,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-DE-A69K,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-ET-A25M,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A2P0,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-H2-A421,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-CE-A483,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-FY-A76V,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DO-A2HM,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-FK-A3SG,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A22Q,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-EL-A3GX,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DE-A4MC,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A3T0,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DE-A4M9,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-E8-A416,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A4V5,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-ET-A39N,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-E3-A3E1,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-BJ-A0ZJ,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-FK-A3SB,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-KS-A4ID,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-DE-A4MA,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A4K9,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-ET-A3BX,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A3T9,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A1YD,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-EL-A3T2,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-FY-A40K,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A13S,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-EL-A3CS,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A2Q0,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A13U,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-BJ-A45K,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-EM-A3OB,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-EL-A3H1,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A4FR,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-KS-A41F,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-H2-A422,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A3FM,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A3T6,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-FY-A3R6,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-E3-A3E5,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A22M,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-IM-A41Z,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-EL-A3CX,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-E8-A417,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-ET-A3BP,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A3VK,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-EM-A3SY,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-EL-A3ZR,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A3O8,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-EL-A3T1,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-E8-A2EA,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A3T8,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A2OX,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A13V,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A1QQ,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-ET-A39R,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-J8-A3YG,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-CE-A485,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A2P1,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-L6-A4EP,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A3UT,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-ET-A2N3,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-DE-A69J,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A2PS,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-ET-A3DT,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A2Q2,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-ET-A3DR,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-J8-A3YH,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A3TB,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-BJ-A45C,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-CE-A13K,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A2PX,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-EL-A3ZS,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-E8-A419,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A3UX,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-BJ-A0ZG,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-EL-A4K2,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DE-A4M8,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-CE-A482,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-E8-A44K,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A2OW,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-BJ-A3F0,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-BJ-A28W,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-FE-A3PC,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-BJ-A28T,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-E8-A432,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A3GO,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A4K1,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A22L,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-DJ-A3UZ,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A3CY,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-BJ-A0ZE,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-BJ-A18Y,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A4UT,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A2Q6,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-FK-A3SE,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A2QA,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-FY-A2QD,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A3GR,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A3T7,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-FE-A230,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A3FO,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-FY-A3NN,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A1YB,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-ET-A3DV,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-EL-A4KD,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A2QB,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-DO-A1K0,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A4FF,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-BJ-A45G,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-FY-A3R7,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A2P2,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-DJ-A13M,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-EL-A3D1,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-BJ-A28V,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-BJ-A3EZ,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-H2-A3RI,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A3VG,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-ET-A3DU,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-ET-A3BV,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A3FP,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-ET-A25O,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DE-A0Y3,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-QD-A8IV,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-E8-A415,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A22J,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-DJ-A4UR,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-DJ-A3UR,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-EM-A22N,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-FY-A3BL,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-FY-A3R8,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-FE-A235,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-ET-A3BS,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A2CT,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-ET-A40S,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-J8-A3YE,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A3CZ,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A3FJ,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A2P3,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A4G1,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-EL-A3GW,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A13P,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A3VL,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-DJ-A1QG,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-BJ-A2N7,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-BJ-A4O9,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-DE-A4MD,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-FY-A3I4,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-ET-A39L,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A3FL,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-IM-A3ED,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-FY-A3YR,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-KS-A4IB,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A2OY,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-EL-A3TA,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A2PW,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-BJ-A291,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A3UM,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A3ST,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-E8-A413,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A2PO,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A3UK,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-L6-A4EQ,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A3UO,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A3AJ,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-FY-A3R9,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-DJ-A1QD,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A4V2,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A2CJ,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-EL-A4K7,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-BJ-A0ZB,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A4KG,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A3VD,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A1QE,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-BJ-A45F,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-MK-A4N6,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A3GP,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A3GU,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A22K,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-CE-A3ME,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-ET-A39S,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-E8-A436,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-FE-A238,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-E3-A3DY,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-KS-A4I7,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A3H4,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A3VE,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A4FO,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-L6-A4ET,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-EL-A3ZL,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-IM-A420,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A2Q1,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-FK-A3SH,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A1QL,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-FE-A234,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-H2-A26U,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-CE-A484,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A1YE,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-FE-A233,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-ET-A2N1,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-BJ-A45D,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-BJ-A2P4,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A3AQ,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A1CS,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-KS-A4I5,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A3GV,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-ET-A39M,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A3D5,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A3MX,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A3ZP,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-ET-A2MY,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-E8-A418,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-ET-A25N,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A2PQ,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A22I,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A3MW,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-E3-A3E2,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-E8-A434,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A2Q4,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-MK-A4N7,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-E8-A438,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A3UV,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-E8-A3X7,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-BJ-A0YZ,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-E8-A2JQ,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-FY-A3NM,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A3MZ,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A4FN,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-ET-A3DQ,"Papillary carcinoma, follicular variant",8340/3,fvPTC_follicular_variant
+TCGA-BJ-A2NA,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-KS-A4I3,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A3H8,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A3H7,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-J8-A3O1,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A2PN,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A3CV,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-FE-A239,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A1QF,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-BJ-A3PR,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-J8-A4HW,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EL-A3CO,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-FE-A23A,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A3SU,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-EM-A3FQ,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
+TCGA-DJ-A4V0,"Papillary adenocarcinoma, NOS",8260/3,cvPTC_classical
